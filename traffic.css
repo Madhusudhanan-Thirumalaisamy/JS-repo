@@ -1,0 +1,56 @@
+.overall{
+    background-color: aqua;
+    border: blue solid 1px;
+    width: 280px;
+    height: 250px;
+}
+.set1{
+    padding: 10px;
+    width: 60px;
+    height:150px;
+}
+.set2{
+    background-color: rgb(19, 26, 26);
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: -150px;
+    margin-left: 130px;
+    width: 70px;
+    height:150px;
+    border: blue solid 1px;
+}
+.lyt1{
+    width:50px;
+    height: 40px;
+    border-radius: 25px;
+}
+.lyt2{
+    border-radius: 25px;
+    width:50px;
+    height: 40px;;
+}
+.lyt3{
+    border-radius: 25px;
+    width:50px;
+    height: 40px;
+}
+.btn1{
+    border-radius: 25px;
+    width:100px;
+    height: 40px;
+    color: azure;
+}
+.btn2{
+    border-radius: 25px;
+    width:100px;
+    height: 40px;
+    margin-top: 8px;
+    color: azure;
+}
+.btn3{
+    border-radius: 25px;
+    width:100px;
+    height: 40px;
+    margin-top: 8px;
+    color: azure;
+}

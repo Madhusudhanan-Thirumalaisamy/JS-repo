@@ -1,0 +1,644 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>Document</title>
+</head>
+<body>
+<div>
+    <label>product id:</label>
+    <input type="text" id="ptid" name="ptid" value="" onkeyup="checkProduct()"/>
+    <span id="spn1"></span>
+</div>
+<div>
+    <label>product Name:</label>
+    <input type="text" id="ptNa" name="ptNa" value="" onkeyup="checkproductName()"/>
+    <span id="spn2"></span>
+</div>
+<div>
+    <label>product quatity:</label>
+    <input type="text" id="proQa" name="proQa" value="" onkeyup="checkquatity()"/>
+    <span id="spn3"></span>
+</div>
+<div>
+    <label>Basic prize:</label>
+    <input type="text" id="basPrize" name="basPrize" value="" onkeyup="calculate()"/>
+</div>
+<div>
+    <label>StateGST:</label>
+    <input type="text" id="Gst" name="Gst" value=""/>
+</div>
+<div>
+    <label>CentralGST:</label>
+    <input type="text" id="cGst" name="cGst" value="" />
+</div>
+<div>
+    <label>Discount:</label>
+    <input type="text" id="disPro" name="disPro" value=""/>
+</div>
+<div>
+    <label>total</label>
+    <input type="text" id="totalAmt" name="totalAmt" value="">
+</div>
+<div>
+    <table>
+        <thead>
+            <th>product id</th>
+            <th>product name</th>
+            <th>product quantity</th>
+            <th>Basic prize</th>
+            <th>StateGST</th>
+            <th>CentralGST</th>
+            <th>Discount</th>
+            <th>Total</th>
+            </thead>
+            <tbody id="tbodyid"></tbody>
+            </table>
+ </div>
+<script src="./product.js"></script>
+</body>
+</html> -->
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+     Required meta tags  -->
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="todo.css">
+<script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script> 
+<title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="todos-bg-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="todos-heading">Todos</h1>
+              <h1 class="create-task-heading">
+                Create <span class="create-task-heading-subpart">Task</span>
+              </h1>
+              <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?"/>
+              <button class="add-todo-button" id="addTodoButton">Add</button>
+              <h1 class="todo-items-heading">
+                My <span class="todo-items-heading-subpart">Tasks</span>
+              </h1>
+              <ul class="todo-items-container" id="todoItemsContainer"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="app.js"></script> -->
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body> --> 
+<!-- <div class="container">
+  <div class="row">
+    <h1>Add to cart</h1>
+    <input type="text" class="form-text col-2" id="storeitem">
+    <input type="button" value="Add" class="col-1 ms-4" id="contectbtn" onclick="itemstore()">
+    <h4>my cart item</h4>
+    <ul id="itemstorell"></ul>
+    </div>
+    </div> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <div>
+  <input type="text" name="input" id="item1" value=""/>
+  <input type="text" name="input" id="item2" value=""/>
+  <input type="button" name="btn" value="add" onclick="addition()"/>
+  <input type="button" name="btn" value="subract" onclick="subtract()"/>
+  <input type="button" name="btn" value="multiple" onclick="multi()"/>
+  <input type="button" name="btn" value="division" onclick="division()"/>
+  <h1 id="sum"></h1>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html> -->
+<!-- iteration 1 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function dropDown()
+{
+  var a=document.getElementById("item1").value;
+  var b="<option>select</option>";
+    for(i=0;i<=a;i++)
+    {
+      b+="<option>"+i+"</option>";
+    }
+  document.getElementById("dropDown1").innerHTML=b;
+}
+</script>
+</head>
+<body>
+<input type="number" id="item1"/>
+<select id="dropDown1"><option>select</option></select>
+<input type="button" id ="btnid" value="select" onclick="dropDown()"/>
+</body>
+</html> -->
+<!-- iteration 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function dropDown()
+{
+  var a=document.getElementById("item1").value;
+  var b="<option>select</option>";
+    for(i=0;i<=a;i++)
+    {
+      b+="<option>"+i+"</option>";
+    }
+  document.getElementById("dropDown1").innerHTML=b;
+}
+</script>
+</head>
+<body>
+<input type="number" id="item1" onkeyup="dropDown()"/>
+<select id="dropDown1"><option>select</option></select>
+</body>
+</html> -->
+<!-- iteration 3 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function dropDown()
+    {
+      let a=document.getElementById("item").value;
+      let b="<option>select</option>";
+      for(i=0;i<=a;i++)
+      {
+        b+="<option>"+i+"</option>";
+      }
+      document.getElementById("dropDown1").innerHTML=b;
+    } 
+    function automatic()
+    {
+    var c=document.getElementById("dropDown1").value;
+    let d="<option>select</option>";
+      for(j=0;j<=c;j++)
+      {
+        d+="<option>"+j+"</option>";
+      }
+      document.getElementById("dropDown2").innerHTML=d;
+    }
+  </script>
+</head>
+<body>
+  <input type="number" id="item" value=""/>
+  <select id="dropDown1" onchange="automatic()"><option>select</option></select>
+  <input type="button" value="click" onclick="dropDown()"/>
+  <select id="dropDown2"><option>select</option></select>
+</body>
+</html>
+ -->
+ <!-- array -1 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let data=['Orange',25,100,true,33,58];
+      console.log(data);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+<!-- array 2 task -->
+<!-- array 2 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let arr=[25,false,"green","apple"];
+    console.log(arr[0]);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>  -->
+<!-- array 3 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script>
+let arrlist=[25,50,"center",75,100];
+arrlist[0]=5;
+console.log(arrlist);
+</script>
+</head>
+<body>
+  
+</body>
+</html> -->
+<!-- array 4 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let arrlist=[12,23,"KGM",45,56,67];
+    console.log(arrlist.length);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+<!-- array 5 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let arrlist=[1,2,4];
+    arrlist[3]=100;
+    console.log(arrlist);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+ <!-- array 6 task -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let arrlist=[1,2,3,4,"KGM","empty"];
+    console.log(arrlist.pop(5));
+    console.log(arrlist);
+  </script>
+ </head>
+ <body>
+  
+ </body>
+ </html> -->
+
+ <!-- iteration 4 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function add()
+{
+    let num=parseInt(document.getElementById("txt").value);
+    let opt='<option value="">select</option>';
+    for(let i=0; i<=num; i++){
+        opt+= '<option value="'+i+'">'+i+'</option>';
+    }
+
+    document.getElementById("otm").innerHTML=opt;
+}
+
+function dataIncert()
+{
+    let emptyStr="";
+    let slt=document.getElementById("otm").value;
+
+    for(let j=0; j<=parseInt(slt); j++)
+    {
+       emptyStr+="<tr><td>"+j+"</td><td><input type='text'></td><td><input type='text'/></td></tr>";
+        console.log(j);
+    }
+
+    document.getElementById("tbodyId").innerHTML=emptyStr;
+
+}
+  </script>
+</head>
+<body>
+  <label>Enter Value</label>
+ <input type="number" name="" id="txt">
+ <label>Selection 1</label>
+ <select name="select" id="otm"  onchange="dataIncert()"></select>
+<button type="submit" value="Click" onclick="add()" >Click</button>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>User Name</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyId"></tbody>
+</table>
+  
+</body>
+</html> -->
+<!-- PASSWORD CREATION -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function gen(){
+    var n = document.getElementById("name").value;
+    var date = document.getElementById("dob").value;
+    var first = n.slice(0,4);
+    var d = new Date(date);
+    var last = d.getDate();
+    var comb = first + last;
+    document.getElementById("pass").value = comb;
+}
+    </script>
+</head>
+<body>
+<form>
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="" id="name"><br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="" id="dob"><br><br>
+        <label for="password">Password</label>
+        <input type="text" name="" id="pass"><br><br>
+        <input type="button" value="Submit" onclick="gen()">
+</form>
+</body>
+</html> -->
+
+<!-- DATA function -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function check(){
+    var date = document.getElementById("date").value;
+    var d = new Date(date);
+    d.setDate(d.getDate()+5);
+    var year  = d.getFullYear().toString();
+    var month  = (d.getMonth()+1).toString();
+    var dat  = d.getDate().toString();
+    var aft = dat + "-" + month + "-" + year;
+    document.getElementById("after").value = aft;
+    var d1 = new Date(date)
+    d1.setDate(d1.getDate()-5);
+    var dat1 = d1.getDate().toString();
+    var bef = dat1 + "-" + month + "-" + year;
+    document.getElementById("before").value = bef;
+}
+  </script>
+</head>
+<body>
+  <label>Select Date</label>
+  <input type="date" name="" id="date"><br><br>
+  <label>After 5 days</label>
+  <input type="text" name="" id="after"><br><br>
+  <label>Before 5 days</label>
+  <input type="text" name="" id="before"><br><br>
+  <input type="button" value="Check" onclick="check()">
+</body>
+</html> -->
+
+
+
+<!-- object 1 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+let car={
+      Name : 'Mercedes Benz',
+      model : 'C-class ',
+      Manufacture:'Daimeler AG company',
+      length:'4686mm',
+      'cargo capacity':'12.6 cubic feet'
+    };
+console.log(car);
+</script>
+</head>
+<body>
+</body>
+</html> -->
+
+
+
+<!-- string task 1 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script>
+    let Tname="Chitra Devi";
+    console.log(Tname.split(' '));
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+
+
+
+<!-- string task 2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let eMail="robin_singh@example.com";
+    let email1=eMail.replace('_singh',"......");
+    console.log(email1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+
+
+<!-- string 3 task-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let content="javascript is client side scripting language";
+    console.log(content.charAt(5));
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+<!-- string 4 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let text="i eat apples the whole day";
+    let x1=text.slice(6,12);
+    console.log(x1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+
+<!-- string 5 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let text="hello world";
+    let text1=(text.replace("hello","hi"));
+    console.log(text1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+<!-- string 6 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let text="hello world";
+    let text1=(text.toUpperCase("hello world"));
+    console.log(text1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+<!-- string 7 task -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let text="HELLO WORLD";
+    let text1=(text.toLowerCase("HELLO WORLD"));
+    console.log(text1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+
+<!-- STRING 8 TASK -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let text="js string exercises";
+    let text1=(text.toUpperCase("js string exercises"));
+    console.log(text1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+
+<!-- math task 1 -->
+
+

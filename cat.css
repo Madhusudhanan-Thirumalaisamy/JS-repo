@@ -1,0 +1,30 @@
+.main{
+    background-color: black;
+}
+.btn1{
+    width: 149px;
+    padding: 20px;
+    background-color: red;
+}
+.btn2{
+    width: 149px;
+    padding: 20px;
+    background-color: aqua;
+}
+.switchBox{
+    width: 303px;
+    color: aliceblue;
+    background-color: cadetblue;
+    
+}
+.IMAGE1{
+    width: 400px;
+    height: 400px;
+}
+.IMAGE2{
+    width: 400px;
+    height: 400px;
+}
+.overall{
+    margin-left: 500px;
+}
